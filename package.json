@@ -1,0 +1,30 @@
+{
+  "name": "Module_7",
+  "version": "1.0.0",
+  "description": "Food Trucks App",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aragonwa/Module_7.git"
+  },
+  "author": "Alex Aragon <aragonwa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aragonwa/Module_7/issues"
+  },
+  "dependencies": {
+    "express": "~4.12.4",
+    "underscore": "~1.8.3",
+    "backbone": "~1.2.0",
+    "jquery": "~2.1.4",
+    "body-parser": "~1.12.4",
+    "grunt": "~0.4.5",
+    "mongoose": "~4.0.3"
+  }
+}
