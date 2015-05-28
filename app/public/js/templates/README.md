@@ -1,0 +1,1 @@
+Place your Backbone application's view templates in this directory.

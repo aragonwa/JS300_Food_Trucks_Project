@@ -1,0 +1,1 @@
+Place any 3rd part library files in this directory (for those files you choose not to use a CDN.)

@@ -1,0 +1,1 @@
+Place your application entry-point file in this directory (app.js)

@@ -1,0 +1,1 @@
+Place your applications Backbone collection modules in this directory.
