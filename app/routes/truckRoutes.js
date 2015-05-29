@@ -38,7 +38,29 @@ router.route('/:truckId')
       }
     });
   })
-  //TODO .put
+  .put(function (request, response) {
+    Truck.findById(request.params.id, function (error, truck) {
+      if (error) {
+        response.status(500).send(error);
+      } else {
+        truck.name = request.body.name;
+        truck.foodType = request.body.foodType;
+        truck.schedule = request.body.schedule;
+        truck.payment = request.body.payment;
+        truck.description = request.body.description;
+        truck.website = request.body.website;
+        truck.Facebook = request.body.Facebook;
+        truck.Twitter = request.body.Twitter;
+        truck.save(function (error) {
+          if (error) {
+            response.status(500).send(error);
+          } else {
+            response.send(truck);
+          }
+        });
+      }
+    });
+  })
   .delete(function(request,response){
     // like the GET route, use the findById method on the mongoose model
     Truck.findById(request.params.truckId, function (error, truck) {
