@@ -1,6 +1,20 @@
 module.exports = function (grunt) {
   'use strict';
-
-  // register task
-  grunt.registerTask('default');
+  grunt.initConfig({
+    jshint: {
+      options: {
+        node: true,
+        curly: true,
+        eqeqeq: true,
+        eqnull: true,
+        browser: true,
+        globals: {
+          jQuery: true
+        },
+      },
+      files: ['GruntFile.js', 'app/**/*.js']
+    }
+  });
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.registerTask('default', ['jshint']);
 };
